@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Magic 8 Ball</title>
+</head>
+
+<body>
+    <h1> Magic 8 Ball ! </h1>
+    <section class="stage">
+        <figure class="ball">
+            <span class="shadow"></span>
+            <span id="iris" class="iris">
+                <div class="iris-container">
+                    <p>8</p>
+                </div>
+            </span>
+            <span id="iris-2" class="iris-2">
+                <div class="iris-container-2">
+                    <p id="advice"></p>
+                </div>
+            </span>
+        </figure>
+    </section>
+    <div id="normal-mode">
+        <input type="text" id="question" placeholder="Ask a question!">
+        <button id="submit" value="">Get Answer</button>
+        <button id="another" class="another">Ask Another?</button>
+    </div>
+    <div class="evil-mode">
+        <input type="checkbox" id="Evil-mode" name="Evil-mode" onClick="EvileMode()" autocomplete="off">
+        <label for="Evil-mode" id="Evil-mode-label">Evil Mode</label><br>
+    </div>
+    <p id="Chances">Chances: 5</p>
+    <script src="index.js"></script>
+</body>
+
+</html>
